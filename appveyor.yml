@@ -5,11 +5,11 @@ before_build:
 after_build:
   - nuget spec
   - nuget pack
-  - appveyor PushArtifact Package.1.0.0.nupkg
+  - nuget push Package.1.0.0.nupkg -Source https://www.myget.org/F/jeffpang/api/v2/package -ApiKey %myget_apikey%
 nuget:
   account_feed: false
   project_feed: true
   
 environment:
-  apikey:
-    secure: 66j5rHXCJ94Iwo7XG4oWAto/v2KPig6mi9Y06C79XCw=
+  myget_apikey:
+    secure: xLjy/Etgq3RwrhEU8G17S4u1v4lG33GkRd75j8x3NnArHGAxjnAjv9roEQUkH/Nu13/bGf+UfNjXHnR75RkuQw==
