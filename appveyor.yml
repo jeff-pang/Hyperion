@@ -5,7 +5,7 @@ environment:
 before_build:
   - nuget restore
 after_build:
-  - nuget pack
+  - nuget spec
 test: off
 artifacts:
   - path: '**\Hyperion.*.nupkg'
