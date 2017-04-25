@@ -5,7 +5,7 @@ before_build:
 after_build:
   - nuget spec
   - nuget pack
-  - appveyor PushArtifact
+  - appveyor PushArtifact Package.1.0.0.nupkg
 nuget:
   account_feed: false
   project_feed: true
