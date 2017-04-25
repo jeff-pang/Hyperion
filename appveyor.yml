@@ -5,7 +5,11 @@ before_build:
 after_build:
   - nuget spec
   - nuget pack
-  - nuget push Package.1.0.0.nupkg -Source https://ci.appveyor.com/nuget/jp-public/hyperion
+  - nuget push Package.1.0.0.nupkg -Source https://ci.appveyor.com/nuget/jp-public/hyperion -ApiKey %apikey%
 nuget:
   account_feed: false
   project_feed: true
+  
+environment:
+  apikey:
+    secure: 66j5rHXCJ94Iwo7XG4oWAto/v2KPig6mi9Y06C79XCw=
