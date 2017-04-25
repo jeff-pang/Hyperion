@@ -4,7 +4,7 @@ environment:
   DOTNET_CLI_TELEMETRY_OPTOUT: 1
 before_build:
   - nuget restore
-after_test:
+after_build:
   - nuget pack
 test: off
 artifacts:
