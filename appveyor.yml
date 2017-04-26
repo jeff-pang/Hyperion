@@ -7,8 +7,4 @@ after_build:
   - nuget push .\Hyperion\bin\Debug\Hyperion.1.0.0.nupkg -Source https://www.myget.org/F/jeffpang/api/v2/package -ApiKey %myget_apikey%
 nuget:
   account_feed: false
-  project_feed: true
-  
-environment:
-  myget_apikey:
-    secure: xLjy/Etgq3RwrhEU8G17S4u1v4lG33GkRd75j8x3NnArHGAxjnAjv9roEQUkH/Nu13/bGf+UfNjXHnR75RkuQw==
+  project_feed: true  
