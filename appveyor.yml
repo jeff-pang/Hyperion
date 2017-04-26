@@ -3,9 +3,8 @@ image: Visual Studio 2017
 before_build:
   - nuget restore
 after_build:
-  - nuget spec
-  - nuget pack
-  - nuget push Package.1.0.0.nupkg -Source https://www.myget.org/F/jeffpang/api/v2/package -ApiKey %myget_apikey%
+  - dotnet pack
+  - nuget push .\bin\Debug\Hyperion.1.0.0.nupkg -Source https://www.myget.org/F/jeffpang/api/v2/package -ApiKey %myget_apikey%
 nuget:
   account_feed: false
   project_feed: true

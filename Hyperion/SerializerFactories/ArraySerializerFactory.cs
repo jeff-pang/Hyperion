@@ -12,6 +12,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Dynamic;
 using System.Runtime.ExceptionServices;
 using Hyperion.Extensions;
 using Hyperion.ValueSerializers;

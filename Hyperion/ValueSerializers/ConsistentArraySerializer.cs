@@ -9,6 +9,7 @@
 
 using System;
 using System.IO;
+using System.Dynamic;
 using Hyperion.Extensions;
 
 namespace Hyperion.ValueSerializers
